@@ -323,9 +323,8 @@ void addTime(float seconds) {
 String convertFrameToTimeString(int frames) {
   String result = "";
   float totalSeconds = float(frames) / 60;
-  result += nf(floor(totalSeconds/60), 2);
-  result += ":";
   result += nf(floor(totalSeconds%60), 2);
+
   return result;
 }
 
